@@ -6,7 +6,7 @@
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
     <title>Memory Card</title>
@@ -26,7 +26,7 @@
     <div id="cards-container" class="cards">
       <div class="card active">
         <div class="inner-card">
-          <div class="inner-card front">
+          <div class="inner-card-front">
             <p>
               What is PHP?
             </p>
@@ -73,7 +73,21 @@
           <i class="fas fa-times"></i>
         </button>
       </h1>
+
+      <div class="form-group">
+        <label for="question">Question</label>
+        <textarea id="question" placeholder="Enter Question..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="answer">Answer</label>
+        <textarea id="answer" placeholder="Enter Answer..."></textarea>
+      </div>
     </div>
+
+    <button id="add-card" class="btn">
+      <i class="fas fa-plus"></i> Add Card
+    </button>
 
     <script src="script.js"></script>
   </body>
