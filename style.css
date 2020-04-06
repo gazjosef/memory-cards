@@ -90,9 +90,10 @@ h1 button {
   height: 100%;
   width: 100%;
   position: relative;
+  transform-style: preserve-3d;
 }
 
-.card.show-answer {
+.card.show-answer .inner-card {
   transform: rotateX(180deg);
 }
 
