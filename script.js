@@ -38,11 +38,12 @@ function createCards() {
 }
 
 // Creat a single card in DOM
-function createCard((data, index)) {
-  const card = document.createElement('div')
-  card.classList.add('card')
-  if(index === 0) {
-    card.classList.add('active')
+function createCard(data, index) {
+  const card = document.createElement('div');
+  card.classList.add('card');
+
+  if (index === 0) {
+    card.classList.add('active');
   }
 
   card.innerHTML = `
@@ -58,9 +59,11 @@ function createCard((data, index)) {
       </p>
     </div>
   </div>
-  `
+  `;
   // Add to DOM cards
-  cardsEl.push(card)
+  cardsEl.push(card);
 
-  cardsContainer.appendChild(card)
+  cardsContainer.appendChild(card);
 }
+
+createCards();
