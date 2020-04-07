@@ -20,16 +20,16 @@ const cardsEl = [];
 const cardsData = [
   {
     question: 'What must a variable begin with?',
-    answer: 'A letter, $, or _'
+    answer: 'A letter, $, or _',
   },
   {
     question: 'What is a variable?',
-    answer: 'Container for a piece of data'
+    answer: 'Container for a piece of data',
   },
   {
     question: 'Example of Case Sensitive VAriable',
-    answer: 'thisIsAVariable'
-  }
+    answer: 'thisIsAVariable',
+  },
 ];
 
 // Create all cards
@@ -84,5 +84,8 @@ nextBtn.addEventListener('click', () => {
   currentActiveCard = currentActiveCard + 1;
 
   if (currentActiveCard > cardsEl.length - 1) {
+    currentActiveCard = cardsEl.length - 1;
   }
+
+  cardsEl[currentActiveCard].className = 'card active';
 });
